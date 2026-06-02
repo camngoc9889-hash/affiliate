@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gillee – Kế Hoạch TikTok Affiliate T6/2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --pink: #E8436A;
+    --pink-light: #FFF0F3;
+    --pink-mid: #FFD6DF;
+    --navy: #0F1B2D;
+    --navy-mid: #1E2E42;
+    --gold: #F5A623;
+    --gold-light: #FFF8EC;
+    --green: #1DB87A;
+    --green-light: #E6FAF3;
+    --gray: #6B7A8D;
+    --gray-light: #F4F6F9;
+    --white: #FFFFFF;
+    --border: #E2E8F0;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: 'Be Vietnam Pro', sans-serif; background: #F7F9FC; color: var(--navy); font-size: 14px; line-height: 1.6; }
+
+  .header {
+    background: linear-gradient(135deg, var(--navy) 0%, #1E2E42 60%, #2A3F5F 100%);
+    color: white; padding: 48px 48px 40px; position: relative; overflow: hidden;
+  }
+  .header::before { content:''; position:absolute; top:-60px; right:-60px; width:300px; height:300px; border-radius:50%; background:rgba(232,67,106,0.15); }
+  .header::after { content:''; position:absolute; bottom:-40px; left:200px; width:200px; height:200px; border-radius:50%; background:rgba(245,166,35,0.1); }
+  .header-tag { display:inline-block; background:var(--pink); color:white; font-size:11px; font-weight:700; letter-spacing:2px; text-transform:uppercase; padding:4px 14px; border-radius:20px; margin-bottom:16px; }
+  .header h1 { font-family:'Playfair Display',serif; font-size:36px; font-weight:700; line-height:1.2; margin-bottom:8px; }
+  .header h1 span { color:var(--gold); }
+  .header-sub { font-size:15px; color:rgba(255,255,255,0.65); margin-bottom:32px; }
+  .header-kpis { display:flex; gap:24px; flex-wrap:wrap; position:relative; z-index:1; }
+  .kpi-box { background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:12px; padding:16px 24px; min-width:160px; }
+  .kpi-box .label { font-size:11px; color:rgba(255,255,255,0.55); text-transform:uppercase; letter-spacing:1px; margin-bottom:4px; }
+  .kpi-box .value { font-size:22px; font-weight:800; color:white; }
+  .kpi-box .value.pink { color:var(--pink); }
+  .kpi-box .value.gold { color:var(--gold); }
+  .kpi-box .note { font-size:11px; color:rgba(255,255,255,0.4); margin-top:2px; }
+
+  .alert-banner { background:linear-gradient(90deg,#FFF3CD,#FFFBF0); border-left:4px solid var(--gold); padding:14px 48px; font-size:13px; color:#7A5800; display:flex; align-items:center; gap:10px; }
+
+  .body { padding:40px 48px; max-width:1200px; }
+  .section { margin-bottom:44px; }
+  .section-title { display:flex; align-items:center; gap:12px; margin-bottom:20px; }
+  .section-num { width:32px; height:32px; background:var(--pink); color:white; border-radius:8px; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; flex-shrink:0; }
+  .section-title h2 { font-size:18px; font-weight:700; color:var(--navy); }
+
+  .card { background:white; border-radius:16px; border:1px solid var(--border); padding:24px; margin-bottom:16px; }
+  .card-header { display:flex; align-items:center; gap:10px; margin-bottom:16px; padding-bottom:12px; border-bottom:1px solid var(--border); }
+  .card-header .icon { font-size:20px; }
+  .card-header h3 { font-size:15px; font-weight:700; }
+  .card-header .badge { margin-left:auto; font-size:11px; font-weight:700; padding:3px 10px; border-radius:20px; white-space:nowrap; }
+  .badge-brand { background:#EEF2FF; color:#4F46E5; }
+  .badge-staff { background:var(--pink-light); color:var(--pink); }
+  .badge-both { background:var(--green-light); color:#0F7A50; }
+  .badge-q { background:var(--gold-light); color:#7A5800; }
+
+  .task-list { list-style:none; }
+  .task-list li { display:flex; align-items:flex-start; gap:10px; padding:8px 0; border-bottom:1px dashed #F0F0F0; font-size:13.5px; }
+  .task-list li:last-child { border-bottom:none; }
+  .task-list li::before { content:'→'; color:var(--pink); font-weight:700; flex-shrink:0; margin-top:1px; }
+  .task-list li .who { margin-left:auto; font-size:11px; font-weight:600; padding:2px 8px; border-radius:10px; white-space:nowrap; flex-shrink:0; }
+  .who-brand { background:#EEF2FF; color:#4F46E5; }
+  .who-staff { background:var(--pink-light); color:var(--pink); }
+  .who-q { background:var(--gold-light); color:#7A5800; }
+
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  th { background:var(--navy); color:white; padding:10px 14px; text-align:left; font-weight:600; font-size:12px; letter-spacing:0.5px; }
+  th:first-child { border-radius:8px 0 0 0; }
+  th:last-child { border-radius:0 8px 0 0; }
+  td { padding:10px 14px; border-bottom:1px solid var(--border); vertical-align:top; }
+  tr:nth-child(even) td { background:var(--gray-light); }
+  tr:last-child td { border-bottom:none; }
+  .highlight-row td { background:var(--pink-light) !important; font-weight:600; }
+
+  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .three-col { display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; }
+
+  .metric-row { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:24px; }
+  .metric-card { background:white; border-radius:12px; border:1px solid var(--border); padding:18px 20px; text-align:center; }
+  .metric-card .m-label { font-size:11px; color:var(--gray); text-transform:uppercase; letter-spacing:1px; margin-bottom:6px; }
+  .metric-card .m-val { font-size:24px; font-weight:800; color:var(--navy); }
+  .metric-card .m-val.red { color:var(--pink); }
+  .metric-card .m-val.green { color:var(--green); }
+  .metric-card .m-note { font-size:11px; color:var(--gray); margin-top:4px; }
+
+  .scenario-row { display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; margin-bottom:24px; }
+  .scenario-card { border-radius:12px; padding:20px; text-align:center; }
+  .scenario-card.pess { background:#FFF5F5; border:2px solid #FFD0D0; }
+  .scenario-card.base { background:#FFF8EC; border:2px solid #FFE4A0; }
+  .scenario-card.opt { background:var(--green-light); border:2px solid #A8EDD0; }
+  .scenario-card .s-label { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px; }
+  .scenario-card.pess .s-label { color:#C0392B; }
+  .scenario-card.base .s-label { color:#7A5800; }
+  .scenario-card.opt .s-label { color:#0F7A50; }
+  .scenario-card .s-val { font-size:22px; font-weight:800; margin-bottom:4px; }
+  .scenario-card.pess .s-val { color:#C0392B; }
+  .scenario-card.base .s-val { color:#7A5800; }
+  .scenario-card.opt .s-val { color:#0F7A50; }
+  .scenario-card .s-prob { font-size:12px; color:var(--gray); }
+  .scenario-card .s-cond { font-size:11.5px; margin-top:10px; color:var(--navy); text-align:left; line-height:1.7; }
+
+  .question-box { background:var(--gold-light); border:1px solid #FFD88A; border-radius:12px; padding:20px 24px; margin-bottom:16px; }
+  .question-box h4 { color:#7A5800; font-size:14px; font-weight:700; margin-bottom:12px; display:flex; align-items:center; gap:8px; }
+  .question-box ul { list-style:none; }
+  .question-box ul li { font-size:13px; color:#5A3E00; padding:5px 0; border-bottom:1px dashed #FFD88A; display:flex; gap:8px; }
+  .question-box ul li:last-child { border-bottom:none; }
+  .question-box ul li::before { content:'❓'; flex-shrink:0; }
+
+  /* STATUS FLOW */
+  .status-flow { display:flex; align-items:center; gap:0; flex-wrap:wrap; margin:16px 0; }
+  .status-step { background:var(--gray-light); border:1px solid var(--border); border-radius:8px; padding:8px 14px; font-size:12px; font-weight:600; white-space:nowrap; }
+  .status-step.active { background:var(--pink-light); border-color:var(--pink); color:var(--pink); }
+  .status-arrow { color:var(--gray); font-size:16px; padding:0 6px; }
+
+  /* PROCESS STEPS */
+  .process-steps { counter-reset:step; }
+  .process-step { display:flex; gap:16px; margin-bottom:20px; align-items:flex-start; }
+  .process-step-num { width:36px; height:36px; background:var(--navy); color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; flex-shrink:0; }
+  .process-step-content { flex:1; }
+  .process-step-title { font-size:15px; font-weight:700; margin-bottom:6px; }
+  .process-step-body { font-size:13px; color:var(--gray); line-height:1.8; }
+  .process-step-body strong { color:var(--navy); }
+
+  /* REPORT TABLE */
+  .report-preview { background:white; border-radius:12px; border:1px solid var(--border); overflow:hidden; }
+  .report-preview-header { background:var(--navy); color:white; padding:12px 20px; font-size:13px; font-weight:700; }
+
+  /* TIMELINE */
+  .timeline { position:relative; padding-left:24px; }
+  .timeline::before { content:''; position:absolute; left:6px; top:8px; bottom:8px; width:2px; background:linear-gradient(to bottom,var(--pink),var(--gold)); }
+  .tl-item { position:relative; margin-bottom:20px; }
+  .tl-item::before { content:''; position:absolute; left:-20px; top:6px; width:12px; height:12px; border-radius:50%; background:var(--pink); border:2px solid white; box-shadow:0 0 0 2px var(--pink); }
+  .tl-week { font-size:11px; font-weight:700; color:var(--pink); text-transform:uppercase; letter-spacing:1px; margin-bottom:4px; }
+  .tl-title { font-size:14px; font-weight:700; margin-bottom:6px; }
+  .tl-tasks { font-size:13px; color:var(--gray); line-height:1.8; }
+
+  .chip { display:inline-block; font-size:11px; font-weight:600; padding:2px 10px; border-radius:20px; margin:2px; }
+  .chip-pink { background:var(--pink-light); color:var(--pink); }
+  .chip-navy { background:#EEF2FF; color:var(--navy); }
+  .chip-green { background:var(--green-light); color:#0F7A50; }
+
+  .infobox { background:var(--gray-light); border-radius:8px; padding:12px 16px; font-size:12.5px; color:var(--gray); margin-top:12px; }
+  .infobox strong { color:var(--navy); }
+
+  .footer { background:var(--navy); color:rgba(255,255,255,0.5); text-align:center; padding:20px 48px; font-size:12px; margin-top:40px; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-tag">Kế Hoạch Affiliate</div>
+  <h1>Gillee × TikTok Affiliate <span>T6/2026</span></h1>
+  <div class="header-sub">Thời trang nữ · Freecast ưu tiên · Mục tiêu: tìm ra 2 SKU tiềm năng song song FAS291</div>
+  <div class="header-kpis">
+    <div class="kpi-box">
+      <div class="label">Target BGĐ</div>
+      <div class="value pink">549tr</div>
+      <div class="note">GMV Affiliate T6</div>
+    </div>
+    <div class="kpi-box">
+      <div class="label">Baseline hiện tại</div>
+      <div class="value">~175tr</div>
+      <div class="note">Tháng gần nhất</div>
+    </div>
+    <div class="kpi-box">
+      <div class="label">Gap cần bù</div>
+      <div class="value gold">+214%</div>
+      <div class="note">Tăng ~3x</div>
+    </div>
+    <div class="kpi-box">
+      <div class="label">Base Case thực tế</div>
+      <div class="value">300–380tr</div>
+      <div class="note">Nếu execute tốt</div>
+    </div>
+  </div>
+</div>
+
+<div class="alert-banner">
+  ⚠️ <strong>Lưu ý:</strong> Target 549tr là stretch goal. Base case thực tế khi execute tốt là 300–380tr. Cần báo cáo rủi ro này lên BGĐ ngay từ đầu tháng.
+</div>
+
+<div class="body">
+
+  <!-- SECTION 0: THỰC TRẠNG -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-num">0</div>
+      <h2>Thực trạng hiện tại</h2>
+    </div>
+    <div class="card">
+      <table>
+        <thead>
+          <tr><th>Chỉ số</th><th>Tình trạng</th><th>Đánh giá</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>GMV Affiliate tháng gần nhất</strong></td>
+            <td>~150–200tr (video + livestream)</td>
+            <td>🟡 Đang ở mức thấp so với target T6</td>
+          </tr>
+          <tr>
+            <td><strong>FAS291</strong></td>
+            <td>Chuyển đổi ổn định, đang là trụ cột</td>
+            <td>✅ Duy trì và scale thêm KOC</td>
+          </tr>
+          <tr>
+            <td><strong>FAS367</strong></td>
+            <td>Có độ bứt phá nhưng <strong>hết tồn kho</strong>. 1 KOC đang tạo ~43tr/47tr tổng GMV</td>
+            <td>🔴 Tạm dừng – chờ hàng về. Rủi ro phụ thuộc KOC đơn lẻ, cần scale đa dạng khi kích hoạt lại</td>
+          </tr>
+          <tr>
+            <td><strong>SKU tiềm năng thứ 2/3</strong></td>
+            <td>Chưa xác định được</td>
+            <td>🟡 Mục tiêu lớn nhất tháng 6</td>
+          </tr>
+          <tr>
+            <td><strong>KOC có cast (TAP/MCN)</strong></td>
+            <td>Chưa có pipeline</td>
+            <td>🟡 Tháng 6: thu thập info, chưa book</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SECTION 1: ĐÁNH GIÁ KHẢ THI -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-num">1</div>
+      <h2>Đánh giá khả thi & 3 kịch bản T6</h2>
+    </div>
+    <div class="scenario-row">
+      <div class="scenario-card pess">
+        <div class="s-label">😐 Pessimistic</div>
+        <div class="s-val">200–250tr</div>
+        <div class="s-prob">Xác suất: ~35%</div>
+        <div class="s-cond">· FAS291 không scale được nhiều KOC<br>· SKU thử nghiệm không tạo được tín hiệu tốt<br>· KOC freecast chuyển đổi thấp</div>
+      </div>
+      <div class="scenario-card base">
+        <div class="s-label">✅ Base Case</div>
+        <div class="s-val">300–380tr</div>
+        <div class="s-prob">Xác suất: ~45%</div>
+        <div class="s-cond">· Scale 40–60 KOC active freecast<br>· FAS291 giữ vững + 1 SKU mới tìm được tín hiệu<br>· Brand ads video đẩy đúng KOC tốt</div>
+      </div>
+      <div class="scenario-card opt">
+        <div class="s-label">🚀 Optimistic</div>
+        <div class="s-val">450–549tr</div>
+        <div class="s-prob">Xác suất: ~20%</div>
+        <div class="s-cond">· Tìm ra 2 SKU viral song song FAS291<br>· Có KOC bùng nổ organically<br>· Brand ads amplify đúng thời điểm</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="icon">📌</span><h3>3 điều kiện tiên quyết để đạt Base Case</h3></div>
+      <ul class="task-list">
+        <li><strong>Chốt xong SKU list + brief trước khi tìm KOC:</strong> Phải có: List SKU → Tiêu chí pick KOC per SKU → Brief từng SKU. Không làm ngược lại.</li>
+        <li><strong>Scale đủ KOC freecast:</strong> Cần 40–60 KOC active trong tháng, video trải đều không dồn vào 1 tuần, không phụ thuộc 1–2 KOC.</li>
+        <li><strong>Brand ads kịp thời:</strong> Nhân viên Aff follow sát, báo ngay KOC nào có video/live tiềm năng để Brand chạy ads amplify đúng lúc.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SECTION 2: SKU PLAN + ĐỀ XUẤT -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-num">2</div>
+      <h2>SKU Plan T6 – Chốt trước khi tìm KOC</h2>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="icon">👗</span><h3>List SKU & Phân vai trò</h3><span class="badge badge-both">Chốt trước, KOC sau</span></div>
+      <table>
+        <thead>
+          <tr><th>SKU</th><th>Loại sản phẩm</th><th>Vai trò T6</th><th>KOC dự kiến</th><th>Ghi chú</th></tr>
+        </thead>
+        <tbody>
+          <tr class="highlight-row">
+            <td><strong>FAS291</strong></td>
+            <td>Áo sơ mi form rộng, nhiều màu</td>
+            <td>⭐ Trụ cột – duy trì ổn định</td>
+            <td>20–25 KOC</td>
+            <td>Tập trung scale số lượng KOC, trải đều video cả tháng</td>
+          </tr>
+          <tr>
+            <td><strong>SKU tiềm năng #1</strong></td>
+            <td colspan="3" style="color:var(--gray);font-style:italic;">Nhân viên Aff tự nghiên cứu và đề xuất dựa trên dữ liệu Seller Center + tín hiệu thị trường</td>
+            <td>🔍 Cần đề xuất trước 03/6</td>
+          </tr>
+          <tr>
+            <td><strong>SKU tiềm năng #2</strong></td>
+            <td colspan="3" style="color:var(--gray);font-style:italic;">Nhân viên Aff tự nghiên cứu và đề xuất dựa trên dữ liệu Seller Center + tín hiệu thị trường</td>
+            <td>🔍 Cần đề xuất trước 03/6</td>
+          </tr>
+          <tr>
+            <td><strong>FAS367</strong></td>
+            <td>—</td>
+            <td>⏸ Tạm dừng – hết tồn</td>
+            <td>0</td>
+            <td>Không book KOC. Khi tồn về sẽ kích hoạt lại ngay</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="infobox">
+        🎯 <strong>Mục tiêu lớn nhất T6:</strong> Tìm ra 2 SKU tiềm năng để đẩy affiliate song song FAS291. Nhân viên Aff nghiên cứu Seller Center, xem xét tín hiệu tự nhiên từ các SKU trong danh mục, đề xuất kèm lý do cụ thể để Brand confirm trước 03/6.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span class="icon">📋</span><h3>Brief SKU gửi KOC (cần làm trước khi tìm KOC)</h3><span class="badge badge-staff">Nhân viên Aff làm</span></div>
+      <table>
+        <thead>
+          <tr><th>SKU</th><th>Hook gợi ý (3 giây đầu)</th><th>Key message</th><th>Format video</th><th>Hashtag chính</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>FAS291</strong></td>
+            <td>"Áo này mà mặc đi làm, nhìn sang bất ngờ luôn..."</td>
+            <td>Form rộng thoải mái, mặc đi làm hay đi chơi đều ổn, nhiều màu</td>
+            <td>Thử đồ + Outfit check 15–30s</td>
+            <td>#gillee #GilleeFAS291 #aosominữ #OOTD</td>
+          </tr>
+          <tr>
+            <td><strong>SKU #1 & #2</strong></td>
+            <td colspan="4" style="color:var(--gray);font-style:italic;">Nhân viên tự làm brief sau khi đề xuất và Brand confirm SKU. Có thể dùng catalogue gửi thẳng hoặc làm Canva kết hợp thêm thông tin còn thiếu.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="infobox">📌 <strong>Cách làm brief:</strong> Dùng catalogue Brand gửi làm base → kết hợp thêm hook, hashtag, format video phù hợp từng SKU. Brand gửi catalogue chính thức trước 10/6, nhân viên bổ sung phần content angle và hashtag.<br><br>
+      📌 <strong>Quy tắc hashtag:</strong> Luôn bắt đầu bằng <strong>#gillee</strong>, sau đó mới đến hashtag SKU và hashtag trend. Ví dụ: <em>#gillee #gilleeOOTD #[mã SKU] #thoitrangnu #OOTD ...</em></div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: TIÊU CHÍ KOC + THÔNG TIN CẦN THU THẬP -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-num">3</div>
+      <h2>Tiêu chí pick KOC & Thông tin cần thu thập</h2>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="icon">🎯</span><h3>Tiêu chí pick KOC Freecast</h3><span class="badge badge-staff">Chốt trước khi tìm</span></div>
+      <div style="font-size:12px;color:var(--gray);font-style:italic;margin-bottom:12px;">* Các tiêu chí dưới đây mang tính gợi ý, nhân viên linh hoạt điều chỉnh theo từng SKU</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;">
+        <ul class="task-list" style="padding-right:16px;">
+          <li>Followers: 5K–1M, niche thời trang/lifestyle nữ</li>
+          <li>GMV Video 30D > 0 (đã có lịch sử bán hàng)</li>
+          <li>AOV tham khảo ~400–500k</li>
+          <li>Đã từng review thời trang, áo, quần hoặc outfit</li>
+        </ul>
+        <ul class="task-list">
+          <li>Video gần nhất không quá 30 ngày (kênh active)</li>
+          <li>Tệp khách chủ yếu nữ 18–35 tuổi</li>
+          <li><strong>Bắt buộc ghi rõ lý do pick</strong> trong sheet 1a</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span class="icon">💰</span><h3>Chính sách hoa hồng Gillee</h3><span class="badge badge-brand">Brand đã xác nhận</span></div>
+      <table>
+        <thead>
+          <tr><th>Hình thức</th><th>Hoa hồng Organic</th><th>Hoa hồng Ads</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cộng tác mở (Freecast)</td>
+            <td>8%</td>
+            <td>3%</td>
+          </tr>
+          <tr class="highlight-row">
+            <td>Cộng tác mục tiêu – Direct KOC</td>
+            <td>10%</td>
+            <td>3%</td>
+          </tr>
+          <tr>
+            <td>Cộng tác mục tiêu – TAP/MCN</td>
+            <td>12%</td>
+            <td>5%</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="infobox">📌 <strong>T6 chỉ freecast.</strong> TAP/MCN: tháng 6 chỉ thu thập thông tin (link TikTok, followers, chủ đề kênh, GMV Video/Live 30D, cast, CMS). Chưa book. Pipeline này dùng cho T7 trở đi.</div>
+    </div>
+
+    <div class="metric-row">
+      <div class="metric-card">
+        <div class="m-label">KOC Freecast cần tìm</div>
+        <div class="m-val">50–70</div>
+        <div class="m-note">Liên hệ trong tháng</div>
+      </div>
+      <div class="metric-card">
+        <div class="m-label">KOC Active dự kiến</div>
+        <div class="m-val green">40–55</div>
+        <div class="m-note">~70–80% tỉ lệ đăng</div>
+      </div>
+      <div class="metric-card">
+        <div class="m-label">KOC TAP thu thập info</div>
+        <div class="m-val red">10–20</div>
+        <div class="m-note">Pipeline cho T7</div>
+      </div>
+      <div class="metric-card">
+        <div class="m-label">Sample cần chuẩn bị</div>
+        <div class="m-val">55–80</div>
+        <div class="m-note">+20% backup</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 4: QUY TRÌNH GỬI HÀNG KOC -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-num">4</div>
+      <h2>Quy trình gửi hàng KOC – Thao tác trên Sheet</h2>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span class="icon">🔄</span><h3>Trạng thái đơn hàng theo luồng</h3></div>
+      <div class="status-flow">
+        <div class="status-step active">B1. Chờ duyệt</div>
+        <div class="status-arrow">→</div>
+        <div class="status-step">B2. Đợi gửi hàng</div>
+        <div class="status-arrow">→</div>
+        <div class="status-step">B3. Đã gửi hàng</div>
+        <div class="status-arrow">→</div>
+        <div class="status-step">B4. Đợi video/live</div>
+        <div class="status-arrow">→</div>
+        <div class="status-step">B5. Đã đăng</div>
+        <div class="status-arrow">→</div>
+        <div class="status-step" style="background:#FFF5F5;border-color:#FFD0D0;color:#C0392B;">B6. Cancel</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span class="icon">📝</span><h3>3 bước quy trình chi tiết</h3></div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="process-step-num">1</div>
+          <div class="process-step-content">
+            <div class="process-step-title">Fill thông tin KOC vào Sheet 1a – <span style="color:var(--pink)">Cần Brand duyệt giai đoạn đầu</span></div>
+            <div class="process-step-body">
+              Điền <strong>đầy đủ tất cả các cột</strong> trong sheet 1a: TikTok ID, Tên kênh, Link, Followers, Nội dung, Tên SP, ID SP, SKU, Giá vốn, Loại xuất, Cast, % Aff, GMV Video 30D, GMV Live 30D, AOV.<br><br>
+              <strong>Đặc biệt: Cột "Lý do pick" phải điền cụ thể</strong> — ví dụ: <em>"GMV cao 400tr, AOV tương đối 146K, đã review áo sơ mi, followers 151k tệp nữ 25-34"</em>. Không được để trống hoặc ghi chung chung.<br><br>
+              Sau khi fill xong → <strong>chuyển trạng thái: B1. Chờ duyệt</strong> → Báo Brand review và duyệt.<br><br>
+              ⚡ <em>Khi đã quen với sản phẩm và tiêu chí, bước duyệt này sẽ được bỏ qua để đẩy nhanh tiến độ.</em><br><br>
+              <strong>2 cách gửi hàng (ưu tiên theo thứ tự):</strong><br>
+              ① <strong>Gửi trong nền tảng (ưu tiên):</strong> Tạo đơn xuất tặng trực tiếp trên TikTok Seller Center → tự động tracking, tiện quản lý<br>
+              ② <strong>Gửi ngoài:</strong> Khi KOC không nhận được qua nền tảng → báo Brand để xử lý, ghi rõ "Đơn giao ngoài" trong cột ID Đơn hàng
+            </div>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-step-num">2</div>
+          <div class="process-step-content">
+            <div class="process-step-title">Follow theo trạng thái – Cập nhật sheet liên tục</div>
+            <div class="process-step-body">
+              Sau khi Brand duyệt → <strong>chuyển B2. Đợi gửi hàng</strong> → Phối hợp với Brand gửi sample.<br><br>
+              Khi hàng đã gửi → <strong>B3. Đã gửi hàng</strong> → Điền ID Đơn hàng vào cột tương ứng.<br><br>
+              Nhắc KOC sau 3–5 ngày nhận hàng → <strong>B4. Đợi video/live</strong> → Theo dõi lịch đăng.<br><br>
+              Khi KOC đăng bài/live → <strong>B5. Đã đăng</strong> → Check link affiliate đúng chưa, báo Brand ngay nếu video/live có tín hiệu tốt để chạy ads amplify.<br><br>
+              KOC không phản hồi sau 7 ngày / từ chối / không đăng → <strong>B6. Cancel</strong> → Ghi lý do, mở slot mới.
+            </div>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-step-num">3</div>
+          <div class="process-step-content">
+            <div class="process-step-title">Đổ report cuối tháng – Theo hướng dẫn Sheet 1c, xem kết quả tại 1d</div>
+            <div class="process-step-body">
+              Cuối tháng: đổ data từ TikTok Seller Center vào sheet <strong>1c. Tiktok Data | Order</strong> theo hướng dẫn trong sheet đó.<br><br>
+              Xem báo cáo tổng hợp tại <strong>sheet 1d. Tiktok Report</strong> — đây là nơi nhìn CIR, GMV theo SKU, theo KOC.<br><br>
+              Nhân viên cũng cần <strong>tự làm mẫu báo cáo tháng</strong> dựa trên kinh nghiệm cá nhân gửi lên Brand để điều chỉnh (xem Section 5 bên dưới).
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 5: MẪU REPORT -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-num">5</div>
+      <h2>Mẫu Report tháng – Nhân viên đề xuất, Brand điều chỉnh</h2>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span class="icon">📈</span><h3>Report theo SKU</h3><span class="badge badge-staff">Nhân viên làm mẫu</span></div>
+      <table>
+        <thead>
+          <tr><th>SKU</th><th>KOC liên hệ</th><th>KOC onboard</th><th>KOC DT >5tr</th><th>Doanh thu (đ)</th><th>CP Hoa hồng (đ)</th><th>CP Hàng tặng (đ)</th><th>CP Booking (đ)</th><th>CP Ads (đ)</th><th>Tổng CP (đ)</th><th>CIR (%)</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>FAS291</td>
+            <td style="color:var(--gray);font-style:italic;">số KOC đã LH</td>
+            <td style="color:var(--gray);font-style:italic;">số KOC nhận sample</td>
+            <td style="color:var(--gray);font-style:italic;">số KOC đạt</td>
+            <td style="color:var(--gray);font-style:italic;">tổng doanh thu</td>
+            <td style="color:var(--gray);font-style:italic;">DT × %hh</td>
+            <td style="color:var(--gray);font-style:italic;">số KOC × giá vốn</td>
+            <td>0 (T6)</td>
+            <td style="color:var(--gray);font-style:italic;">xem Seller Center</td>
+            <td style="color:var(--gray);font-style:italic;">tổng 4 cột CP</td>
+            <td style="color:var(--gray);font-style:italic;">Tổng CP ÷ DT</td>
+          </tr>
+          <tr>
+            <td>SKU #1</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+            <td>0 (T6)</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+          </tr>
+          <tr>
+            <td>SKU #2</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+            <td>0 (T6)</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+          </tr>
+          <tr class="highlight-row">
+            <td><strong>TỔNG THÁNG</strong></td>
+            <td><strong>—</strong></td>
+            <td><strong>—</strong></td>
+            <td><strong>—</strong></td>
+            <td><strong>—</strong></td>
+            <td><strong>—</strong></td>
+            <td><strong>—</strong></td>
+            <td><strong>0</strong></td>
+            <td><strong>—</strong></td>
+            <td><strong>—</strong></td>
+            <td><strong>CIR tổng</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span class="icon">📅</span><h3>Report theo ngày (tracking realtime)</h3><span class="badge badge-staff">Nhân viên làm mẫu</span></div>
+      <table>
+        <thead>
+          <tr><th>Ngày</th><th>SKU</th><th>Doanh thu ngày (đ)</th><th>CP Hoa hồng (đ)</th><th>CP Hàng tặng (đ)</th><th>CP Booking (đ)</th><th>CP Ads (đ)</th><th>CIR ngày (%)</th><th>Ghi chú</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01/6</td><td>FAS291</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+            <td>0</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+            <td style="color:var(--gray);font-style:italic;">—</td>
+            <td style="color:var(--gray);font-style:italic;">KOC A đăng video</td>
+          </tr>
+          <tr>
+            <td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="infobox">
+        📌 <strong>Định nghĩa các cột chi phí:</strong><br>
+        · <strong>CP Hoa hồng</strong> = Doanh thu × % hoa hồng đẩy Brand trả (3% hoặc 5%)<br>
+        · <strong>CP Hàng tặng</strong> = Số KOC nhận sample × Giá vốn SKU đó<br>
+        · <strong>CP Booking</strong> = Tổng cast phí đã trả KOC (T6 = 0, áp dụng từ T7)<br>
+        · <strong>CP Ads</strong> = Ads live + Ads video Brand đã chạy cho KOC (nhân viên tự xem trên Seller Center, chỉ xem không chỉnh sửa)<br>
+        · <strong>CIR = Tổng chi phí ÷ Tổng doanh thu × 100%</strong><br><br>
+        ⚠️ Mẫu này nhân viên tự làm theo kinh nghiệm cá nhân rồi gửi Brand. Brand sẽ điều chỉnh và confirm format cuối cùng.
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 6: TIMELINE -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-num">6</div>
+      <h2>Timeline thực thi tháng 6</h2>
+    </div>
+    <div class="card">
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-week">Trước 03/6 — CHỐT NỀN TẢNG</div>
+          <div class="tl-title">⚡ Phải xong trước khi tìm KOC</div>
+          <div class="tl-tasks">
+            <span class="chip chip-navy">Brand</span> Confirm tồn kho + giá vốn các SKU trước 03/6<br>
+            <span class="chip chip-navy">Brand</span> Cấp tài khoản Seller Center Gillee cho nhân viên Aff<br>
+            <span class="chip chip-pink">Nhân viên</span> Nghiên cứu và đề xuất 2 SKU tiềm năng → Brand confirm<br>
+            <span class="chip chip-pink">Nhân viên</span> Chốt tiêu chí pick KOC từng SKU với Brand (followers, GMV 30D, AOV, niche, tệp khách)<br>
+            <span class="chip chip-pink">Nhân viên</span> Làm brief cho FAS291 + 2 SKU sau khi được duyệt<br>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-week">Tuần 1 (01–07/6) — TÌM & LIÊN HỆ KOC</div>
+          <div class="tl-title">🔍 Bắt đầu pipeline KOC</div>
+          <div class="tl-tasks">
+            <span class="chip chip-pink">Nhân viên</span> Dùng Seller Center tìm KOC freecast theo tiêu chí, fill sheet 1a<br>
+            <span class="chip chip-pink">Nhân viên</span> Liên hệ 30–40 KOC đầu tiên cho FAS291 và 2 SKU tiềm năng đã được duyệt<br>
+            <span class="chip chip-pink">Nhân viên</span> Gửi brief + danh sách SKU cho KOC đồng ý<br>
+            Song song: bắt đầu thu thập thông tin KOC có cast cho pipeline T7
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-week">Tuần 2 (08–14/6) — GỬI SAMPLE & KÍCH HOẠT</div>
+          <div class="tl-title">📦 Gửi sample đợt 1</div>
+          <div class="tl-tasks">
+            <span class="chip chip-pink">Nhân viên</span> Tổng hợp danh sách KOC đã duyệt → báo Brand xuất hàng (ưu tiên nền tảng)<br>
+            <span class="chip chip-pink">Nhân viên</span> Cập nhật trạng thái sheet: B2 → B3 khi hàng đi<br>
+            <span class="chip chip-navy">Brand</span> Gửi sample (nền tảng hoặc ngoài)<br>
+            <span class="chip chip-navy">Brand</span> Gửi catalogue + brief chính thức nếu đã sẵn sàng<br>
+            Tiếp tục liên hệ thêm KOC mới để đủ số lượng<br>
+            <span style="font-size:12px;color:var(--pink);font-weight:600;">⚠️ Lưu ý:</span> <span style="font-size:12px;color:var(--gray);">Báo Brand gửi hàng dàn trải <strong>2–3 KOC/ngày</strong>, không gom lại báo 1 lần 10 KOC</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-week">Tuần 3 (15–21/6) — THEO DÕI & BÁO ADS</div>
+          <div class="tl-title">📊 Video bắt đầu lên, nhân viên Aff follow sát</div>
+          <div class="tl-tasks">
+            <span class="chip chip-pink">Nhân viên</span> Cập nhật B4 → B5 khi KOC đăng bài<br>
+            <span class="chip chip-pink">Nhân viên</span> <strong>Báo ngay Brand</strong> khi video/live nào có dấu hiệu tốt (view tăng nhanh, comment hỏi mua) → Brand xem xét chạy ads amplify<br>
+            <span class="chip chip-pink">Nhân viên</span> Follow up KOC chưa đăng, nhắc lịch<br>
+            Tổng hợp report giữa tháng: doanh thu thực tế vs target, điều chỉnh SKU nếu cần
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-week">Tuần 4 (22–30/6) — CLOSE & REPORT</div>
+          <div class="tl-title">📈 Đẩy mạnh cuối tháng & Tổng kết</div>
+          <div class="tl-tasks">
+            <span class="chip chip-pink">Nhân viên</span> Push KOC chưa đăng bài, nhắc deadline<br>
+            <span class="chip chip-pink">Nhân viên</span> Đổ data vào sheet 1c, xem report 1d<br>
+            <span class="chip chip-pink">Nhân viên</span> Làm mẫu báo cáo tháng (theo Section 5) gửi Brand<br>
+            <span class="chip chip-navy">Brand</span> Confirm số liệu ads, thanh toán hoa hồng<br>
+            Đánh giá: SKU nào tìm được tín hiệu → scale T7. SKU nào không → cắt hoặc thay thế.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 7: PHÂN CÔNG -->
+  <div class="section">
+    <div class="section-title">
+      <div class="section-num">7</div>
+      <h2>Checklist phân công – Nhân viên Aff & Brand</h2>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="card-header"><span class="icon">⚡</span><h3>Nhân viên – Theo thời điểm</h3><span class="badge badge-staff">Đúng deadline</span></div>
+        <ul class="task-list">
+          <li><strong>Trước 03/6:</strong> Đề xuất 2 SKU tiềm năng + chốt tiêu chí KOC + làm brief FAS291</li>
+          <li><strong>Khi Brand duyệt SKU:</strong> Làm brief 2 SKU mới, cấu hình cộng tác mở Seller Center</li>
+          <li><strong>Khi có KOC đủ điều kiện:</strong> Gửi Brand duyệt <strong>2–3 KOC/ngày</strong>, không gom 10 KOC/lần</li>
+          <li><strong>Giữa tháng (15/6):</strong> Report mid-month — thực tế vs target, đề xuất điều chỉnh</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header"><span class="icon">⚡</span><h3>Brand – Theo thời điểm</h3><span class="badge badge-brand">Đúng deadline</span></div>
+        <ul class="task-list">
+          <li><strong>Trước 03/6:</strong> Cấp Seller Center + confirm tồn kho/giá vốn SKU</li>
+          <li><strong>Trước 10/6:</strong> Gửi catalogue chính thức</li>
+          <li><strong>Khi nhân viên báo tín hiệu tốt:</strong> Quyết định chạy ads, xem xét voucher/giá độc quyền live tuỳ kênh</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="card-header"><span class="icon">📋</span><h3>Nhân viên – Daily</h3><span class="badge badge-staff">Mỗi ngày</span></div>
+        <ul class="task-list">
+          <li>Follow up trạng thái B1→B6, cập nhật sheet 1a</li>
+          <li>KOC nhận hàng → nhắc lịch đăng bài</li>
+          <li>Theo dõi video/live — báo Brand ngay nếu có tín hiệu tốt</li>
+          <li>Tìm & liên hệ KOC mới qua Seller Center + Kaloboost (dàn trải, không dồn)</li>
+          <li>Thu thập info KOC có cast cho pipeline T7</li>
+          <li>Theo dõi hashtag trend để update brief</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header"><span class="icon">🏢</span><h3>Brand – Daily</h3><span class="badge badge-brand">Mỗi ngày</span></div>
+        <ul class="task-list">
+          <li>Duyệt KOC nhân viên gửi lên (tối đa 2–3 KOC/ngày, giai đoạn đầu)</li>
+          <li>Xuất hàng tặng theo danh sách duyệt (nền tảng ưu tiên)</li>
+          <li>Theo dõi tín hiệu video/live — quyết định chạy ads khi nhân viên báo</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="card-header"><span class="icon">📅</span><h3>Nhân viên – Weekly</h3><span class="badge badge-staff">Cuối tuần</span></div>
+        <ul class="task-list">
+          <li>Báo cáo tuần gửi <strong>Ngọc – Vận hành sàn</strong> (KOC liên hệ / duyệt / đăng / GMV tạm)</li>
+          <li>KOC không phản hồi quá 7 ngày → cancel, mở slot mới</li>
+          <li>Tổng hợp video/live tín hiệu tốt → đề xuất Brand chạy ads</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header"><span class="icon">📅</span><h3>Brand – Weekly</h3><span class="badge badge-brand">Cuối tuần</span></div>
+        <ul class="task-list">
+          <li>Nhận & review báo cáo tuần từ nhân viên</li>
+          <li>Cập nhật tình trạng tồn kho → báo nhân viên nếu có thay đổi</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="card-header"><span class="icon">📊</span><h3>Nhân viên – Monthly</h3><span class="badge badge-staff">Cuối tháng</span></div>
+        <ul class="task-list">
+          <li>Đổ data sheet 1c → xem report 1d</li>
+          <li>Làm mẫu báo cáo tháng (theo SKU + theo ngày) gửi Brand</li>
+          <li>Đánh giá SKU & KOC → đề xuất scale/cắt cho T7</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header"><span class="icon">📊</span><h3>Brand – Monthly</h3><span class="badge badge-brand">Cuối tháng</span></div>
+        <ul class="task-list">
+          <li>Review & confirm format báo cáo tháng nhân viên gửi</li>
+          <li>Confirm thanh toán hoa hồng KOC</li>
+          <li>Quyết định SKU scale/cắt T7</li>
+          <li>Quyết định skip bước duyệt KOC nếu nhân viên đã nắm vững</li>
+        </ul>
+      </div>
+    </div>
+
+</div>
+
+</div>
+
+<div class="footer">
+  Gillee × TikTok Affiliate Plan T6/2026 · Cập nhật: 01/06/2026 · Phiên bản 6
+</div>
+</body>
+</html>
